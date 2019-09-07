@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp lồng nhau</title>
+</head>
+<body>
+<script>
+    let  bang;
+    bang = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+    for (q=1;q<=10;q++){
+        bang = bang +"<tr>";
+        for (d=1;d<=10;d++){
+            bang = bang +"<td>"+q*d+"</td>";
+        }
+        bang = bang +"</tr>"
+    }
+    bang = bang + "</table>"
+    document.write(bang);
+</script>
+</body>
+</html>
